@@ -1,41 +1,42 @@
-# 🏥 Predictors of Health in US Counties
+# 🧠 Image Classification of Medical Organs
 
-This repository contains an **R project** analyzing health outcomes across **U.S. counties**,  
-based on various predictors from the **2018 County Health Rankings Data (v2.xls)**.  
-
-The analysis applies **machine learning techniques** to explore the relationships between predictors and health indicators,  
-and generates a range of **visualizations and prediction plots**.  
+This repository contains a **Python-based machine learning project** for **image classification** of various **medical organ images**.  
+The goal was to build a model that can automatically **recognize and cluster organ images** with a classification accuracy of **70%+**.  
 
 ---
 
-## 📊 Dataset
-- **Source:** [County Health Rankings & Roadmaps](https://www.countyhealthrankings.org/)  
-- **File:** `2018 County Health Rankings Data - v2.xls`  
-- **Granularity:** County-level data across the United States  
-- **Variables:** Socioeconomic, behavioral, and environmental predictors related to population health  
+## 📊 Project Overview
+- **Task:** Image classification of medical organs  
+- **Approach:** Machine learning / deep learning applied on labeled medical image dataset  
+- **Outcome:** Achieved **70%+ accuracy** on test data  
+- **Applications:** Automated medical image screening, assistive diagnostics, data-driven research  
 
 ---
 
-## 🛠️ Project Workflow
-1. **Data Cleaning & Preprocessing**  
-   - Handling missing values  
-   - Feature selection & transformation  
+## 🛠️ Tech Stack
+- **Language:** Python  
+- **Libraries:**  
+  - `numpy`, `pandas` – data handling  
+  - `matplotlib`, `seaborn` – data visualization  
+  - `scikit-learn` – preprocessing, classical ML models  
+  - `tensorflow` / `keras` – deep learning (CNNs)  
+- **Environment:** Jupyter Notebook / Python scripts  
 
-2. **Exploratory Data Analysis (EDA)**  
-   - Distribution plots of key predictors  
-   - Correlation heatmaps  
-   - Regional comparisons  
+---
 
-3. **Machine Learning Models**  
-   - Linear Regression  
-   - Random Forests  
-   - Gradient Boosted Trees  
-   - Model evaluation (RMSE, R², etc.)  
+## 🔬 Methodology
+1. **Data Preparation**  
+   - Collected and preprocessed organ image dataset  
+   - Data augmentation (rotation, scaling, flipping) for generalization  
 
-4. **Visualization & Results**  
-   - Predictive plots for selected health outcomes  
-   - County-level health indicator maps  
-   - Comparative charts of model performance  
+2. **Model Training**  
+   - Implemented **Convolutional Neural Network (CNN)** models  
+   - Also tested classical ML classifiers (SVM, Random Forest) on extracted features  
+
+3. **Evaluation**  
+   - Train/test split for validation  
+   - Metrics: Accuracy, Confusion Matrix, Precision/Recall  
+   - Achieved **~70% accuracy** in classifying organ images  
 
 ---
 
